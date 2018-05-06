@@ -10,14 +10,14 @@ import Foundation
 
 // MARK: - RandomRepresentable
 
-protocol RandomRepresentable {
+public protocol RandomRepresentable {
     static var random: Self { get }
     static func randoms(min: Int, max: Int) -> [Self]
 }
 
 extension RandomRepresentable {
     
-    static func randoms(min: Int = 1, max: Int = 1 + Int(arc4random() % 10)) -> [Self] {
+    public static func randoms(min: Int = 1, max: Int = 1 + Int(arc4random() % 10)) -> [Self] {
         var randoms: [Self] = []
         for _ in min...max {
             randoms.append(random)

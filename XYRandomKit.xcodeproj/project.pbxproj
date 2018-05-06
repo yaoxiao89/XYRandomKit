@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		13C64FF0209F5A91007C53B3 /* XYRandomKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 13C64FEE209F5A91007C53B3 /* XYRandomKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		13C64FF8209F5B7F007C53B3 /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C64FF7209F5B7F007C53B3 /* Random.swift */; };
+		13C64FFA209F5BF1007C53B3 /* Foundation+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C64FF9209F5BF1007C53B3 /* Foundation+Random.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +17,7 @@
 		13C64FEE209F5A91007C53B3 /* XYRandomKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYRandomKit.h; sourceTree = "<group>"; };
 		13C64FEF209F5A91007C53B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13C64FF7209F5B7F007C53B3 /* Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
+		13C64FF9209F5BF1007C53B3 /* Foundation+Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Foundation+Random.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +51,7 @@
 			isa = PBXGroup;
 			children = (
 				13C64FF7209F5B7F007C53B3 /* Random.swift */,
+				13C64FF9209F5BF1007C53B3 /* Foundation+Random.swift */,
 				13C64FF6209F5A97007C53B3 /* Supporting Files */,
 			);
 			path = XYRandomKit;
@@ -143,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13C64FF8209F5B7F007C53B3 /* Random.swift in Sources */,
+				13C64FFA209F5BF1007C53B3 /* Foundation+Random.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
