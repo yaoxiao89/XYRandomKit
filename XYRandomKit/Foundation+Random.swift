@@ -8,6 +8,16 @@
 
 import Foundation
 
+// MARK: - Bool
+
+extension Bool: RandomRepresentable {
+    
+    public static var random: Bool {
+        return Int.random % 2 == 0
+    }
+    
+}
+
 // MARK: - Date
 
 extension Date: RandomRepresentable {
