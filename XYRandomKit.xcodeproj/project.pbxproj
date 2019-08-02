@@ -7,17 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		13C64FF0209F5A91007C53B3 /* XYRandomKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 13C64FEE209F5A91007C53B3 /* XYRandomKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		13C64FF8209F5B7F007C53B3 /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C64FF7209F5B7F007C53B3 /* Random.swift */; };
-		13C64FFA209F5BF1007C53B3 /* Foundation+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C64FF9209F5BF1007C53B3 /* Foundation+Random.swift */; };
+		1394D67922F45B180096F779 /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1394D67522F45B180096F779 /* Random.swift */; };
+		1394D67A22F45B180096F779 /* Foundation+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1394D67622F45B180096F779 /* Foundation+Random.swift */; };
+		1394D67B22F45B180096F779 /* XYRandomKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 1394D67722F45B180096F779 /* XYRandomKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1394D67522F45B180096F779 /* Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
+		1394D67622F45B180096F779 /* Foundation+Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Foundation+Random.swift"; sourceTree = "<group>"; };
+		1394D67722F45B180096F779 /* XYRandomKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYRandomKit.h; sourceTree = "<group>"; };
+		1394D67822F45B180096F779 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13C64FEB209F5A91007C53B3 /* XYRandomKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XYRandomKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		13C64FEE209F5A91007C53B3 /* XYRandomKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYRandomKit.h; sourceTree = "<group>"; };
-		13C64FEF209F5A91007C53B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		13C64FF7209F5B7F007C53B3 /* Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
-		13C64FF9209F5BF1007C53B3 /* Foundation+Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Foundation+Random.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,10 +31,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1394D67322F45B180096F779 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				1394D67422F45B180096F779 /* XYRandomKit */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		1394D67422F45B180096F779 /* XYRandomKit */ = {
+			isa = PBXGroup;
+			children = (
+				1394D67522F45B180096F779 /* Random.swift */,
+				1394D67622F45B180096F779 /* Foundation+Random.swift */,
+				1394D67D22F45B1D0096F779 /* Supporting Files */,
+			);
+			path = XYRandomKit;
+			sourceTree = "<group>";
+		};
+		1394D67D22F45B1D0096F779 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1394D67822F45B180096F779 /* Info.plist */,
+				1394D67722F45B180096F779 /* XYRandomKit.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1394D67E22F45B520096F779 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1394D67F22F45B520096F779 /* XYRandomKitTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		1394D67F22F45B520096F779 /* XYRandomKitTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = XYRandomKitTests;
+			sourceTree = "<group>";
+		};
 		13C64FE1209F5A91007C53B3 = {
 			isa = PBXGroup;
 			children = (
-				13C64FED209F5A91007C53B3 /* XYRandomKit */,
+				1394D67322F45B180096F779 /* Sources */,
+				1394D67E22F45B520096F779 /* Tests */,
 				13C64FEC209F5A91007C53B3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,25 +90,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		13C64FED209F5A91007C53B3 /* XYRandomKit */ = {
-			isa = PBXGroup;
-			children = (
-				13C64FF7209F5B7F007C53B3 /* Random.swift */,
-				13C64FF9209F5BF1007C53B3 /* Foundation+Random.swift */,
-				13C64FF6209F5A97007C53B3 /* Supporting Files */,
-			);
-			path = XYRandomKit;
-			sourceTree = "<group>";
-		};
-		13C64FF6209F5A97007C53B3 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				13C64FEE209F5A91007C53B3 /* XYRandomKit.h */,
-				13C64FEF209F5A91007C53B3 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -73,7 +97,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13C64FF0209F5A91007C53B3 /* XYRandomKit.h in Headers */,
+				1394D67B22F45B180096F779 /* XYRandomKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,8 +170,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13C64FF8209F5B7F007C53B3 /* Random.swift in Sources */,
-				13C64FFA209F5BF1007C53B3 /* Foundation+Random.swift in Sources */,
+				1394D67922F45B180096F779 /* Random.swift in Sources */,
+				1394D67A22F45B180096F779 /* Foundation+Random.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,7 +310,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = XYRandomKit/Info.plist;
+				INFOPLIST_FILE = Sources/XYRandomKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -315,7 +339,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = XYRandomKit/Info.plist;
+				INFOPLIST_FILE = Sources/XYRandomKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
